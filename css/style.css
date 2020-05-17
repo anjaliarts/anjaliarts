@@ -9,16 +9,21 @@ Dark Purple: #c700cb
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .bg-clr{
     background-color: rgba(95, 140, 223, 0.781);
 }
 
+#body{
+    width: fit-content;
+}
+
 .header{
     text-decoration-color: black;
 }
 
-.container{
-    background-color: blueviolet;
+.container_made{
+    padding-top: 50px;
 }
