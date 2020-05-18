@@ -5,11 +5,17 @@
 }
 
 .section-features{
-    padding: 15rem 10rem;
+    padding: 5rem 10rem;
     background-image: linear-gradient(to right bottom, 
                 $color-gradient-start,
                 $color-gradient-end),
                 url(../image/featr.jpg);
     background-size: cover;
+    background-position: center;
     
+}
+
+.section-category{
+    background-color: $color-light-grey-1;
+    padding: 5rem 10rem 40rem 10rem;
 }
