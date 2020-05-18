@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="image/favicon.jpg">
 
+    <!-- Fonts only -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <!-- CSS only -->
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/icon-fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- JS, Popper.js, and jQuery -->
@@ -19,10 +23,10 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-clr ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand " href="#">
                 <img src="image\favicon.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Anjali Arts Academy
+                
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,19 +40,87 @@
                         <a class="nav-link" href="#">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <div class="head-dashboard">
+            <div class="heading-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary-main">Anjali Arts Academy</span>
+                    <span class="heading-primary-sub">Design Your Dreams</span>
+                </h1>
+            </div>
+        </div>
 
-    <div class="container">
-        <p>Some Text....</p>
-    </div>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Exciting Ideas for Craziest Minds
+                </h2>
+            </div>
+
+            <div class="row-1">
+                <div class="col-1-of-2">
+                   <h3 class="heading-tertiary u-margin-bottom-small">Dreams have no fear to jump out of the box</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sequi? Officia ullam aliquid error eligendi perspiciatis consequuntur nisi possimus. Obcaecati esse illum voluptatem recusandae fuga tempora. Repellendus voluptate inventore eum?
+                    </p>
+
+                    <h3 class="heading-tertiary u-margin-bottom-small">Art should be something that liberates your soul </h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sequi? Officia ullam aliquid error eligendi perspiciatis consequuntur nisi possimus.
+                    </p>
+                </div>
+                <div class="col-1-of-2">
+                   <div class="composition">
+                       <img src="image/sect-1.jpg" alt="Drawing" class="composition__photo composition__photo--p1">
+                       <img src="image/sect-2.jpg" alt="Origami" class="composition__photo composition__photo--p2">
+                       <img src="image/sect-3.jpg" alt="Yoga" class="composition__photo composition__photo--p3">
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+            <div class="row-1">
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-lightbulb clr-blue"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Explore the Ideas</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste quas itaque quo iu..
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-target clr-red"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Corner IT</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste quas itaque quo iu..
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-paperplane clr-orange"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Fly with It</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste quas itaque quo iu..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-category">
+            
+        </section>
+    </main>
     
 </body>
 </html>
