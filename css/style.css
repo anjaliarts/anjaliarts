@@ -129,6 +129,52 @@ body {
       text-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 30; }
 
+.card-1 {
+  background-color: #ffffff;
+  height: 30rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  color: #ffffff; }
+  .card-1__picture {
+    background-size: cover;
+    height: 12rem;
+    background-blend-mode: darken;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); }
+    .card-1__picture--1 {
+      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), #f7f7f7ad), url(../image/sect-1.jpg); }
+    .card-1__picture--2 {
+      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), #f7f7f7ad), url(../image/sect-2.jpg); }
+    .card-1__picture--3 {
+      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), #f7f7f7ad), url(../image/sect-3.jpg); }
+  .card-1__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: right;
+    position: absolute;
+    top: 9rem;
+    right: 0.5rem;
+    background-color: grey;
+    display: block; }
+  .card-1:hover {
+    transform: scale(1.06); }
+  .card-1__details {
+    padding: 1.5rem;
+    color: grey; }
+    .card-1__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card-1__details ul li {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem; }
+        .card-1__details ul li:not(:last-child) {
+          border-bottom: 0.1rem solid #eee; }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -177,6 +223,11 @@ body {
   margin-top: -20vh; }
 
 .section-features {
-  padding: 15rem 10rem;
+  padding: 5rem 10rem;
   background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), #f7f7f7ad), url(../image/featr.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
+
+.section-category {
+  background-color: #f7f7f7;
+  padding: 5rem 10rem 40rem 10rem; }
