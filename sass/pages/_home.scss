@@ -17,5 +17,28 @@
 
 .section-category{
     background-color: $color-light-grey-1;
-    padding: 5rem 10rem 40rem 10rem;
+    padding: 5rem 10rem 10rem 10rem;
+}
+
+.section-contact-us{
+    padding: 7.5rem;
+    background-color: rgba($color-logo-blue, 0.8);
+}
+
+.contact{
+    background-image: linear-gradient(105deg,
+                                    rgba($color-white, 0.9) 0%,
+                                    rgba($color-white, 0.9) 50%,
+                                    transparent 50%),
+                                    url(../../image/indexDash.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    height: 35rem;
+
+    &__form{
+        width: 50%;
+        padding: 2rem 3rem;
+    }
 }
