@@ -1,0 +1,48 @@
+.ludwig{
+   position: relative;
+   padding-left: 1rem;
+   border-left: 0.8rem solid lighten($color-black, 30%);
+   border-radius: 1rem;
+   font-size: $basic-font-size;
+   font-family: 'Roboto', serif;
+   font-weight: 100;
+   &:before, &:after {
+      content: '\201C';
+      font-family: 'Sanchez';
+      color: lighten($color-black, 10%);
+   }
+   &:after {
+      content: '\201D';
+   }
+
+   &__author {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: darken($color-white, 75%);
+      float: right;
+      margin-top: 1rem;
+      margin-right: 1rem;
+     
+      &:before {
+         content: '\2015';  
+      }
+   }
+}
+
+.ludwig-right {
+    position: relative;
+    padding-left: 1rem;
+    border-right: 0.8rem solid lighten($color-black, 30%);
+    border-radius: 1rem;    
+    font-size: $basic-font-size;
+    font-weight: 100;
+    &:before, &:after {
+       content: '\201C';
+       font-family: 'Sanchez';
+       color: lighten($color-black, 30%);
+    }
+    &:after {
+       content: '\201D';
+    }
+}

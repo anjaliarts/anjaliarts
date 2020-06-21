@@ -18,6 +18,118 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes slideInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes zoomReverseIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.5); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+  animation-duration: 1s; }
+
+.animations-disabled, .animations-disabled [data-animation] {
+  animation: none !important;
+  opacity: 1 !important; }
+
+.slideInUp {
+  animation-name: slideInUp; }
+
+.slideInDown {
+  animation-name: slideInDown; }
+
+.slideInLeft {
+  animation-name: slideInleft; }
+
+.slideInRight {
+  animation-name: slideInRight; }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
+.fadeOut {
+  animation-name: fadeIn;
+  animation-direction: reverse; }
+
+.zoomIn {
+  animation-name: zoomIn; }
+
+.zoomOut {
+  animation-name: zoomIn;
+  animation-direction: reverse; }
+
+.zoomReverseIn {
+  animation-name: zoomReverseIn; }
+
+.zoomReverseOut {
+  animation-name: zoomReverseIn;
+  animation-direction: reverse; }
+
+.flipInY {
+  animation-name: flipInY; }
+
+.flipOutY {
+  animation-name: flipInY;
+  animation-direction: reverse; }
+
 * {
   margin: 0;
   padding: 0;
@@ -31,15 +143,59 @@ p {
 
 body {
   font-family: "Lato" sans-serif; }
-  body main {
-    padding: 0 30px; }
-    body main .head-dashboard {
+  body .header {
+    position: fixed;
+    max-height: 5rem;
+    z-index: 999;
+    width: 100%;
+    padding-top: 1rem;
+    background: transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-bottom: 0.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #39426c; }
+    body .header .logo {
+      width: auto;
+      float: left;
+      display: block;
+      margin-top: 0;
+      line-height: 1; }
+    body .header .logo-box {
       position: relative;
-      height: 95vh;
-      padding-top: 50px;
-      background-image: linear-gradient(to right bottom, #f7f7f7ad, #f7f7f7ad), url(../image/indexDash.jpg);
-      background-size: cover;
-      background-position: top; }
+      height: 5rem;
+      left: 1rem;
+      top: -1rem; }
+    body .header nav {
+      width: 60%; }
+      body .header nav ul {
+        list-style: none;
+        overflow: hidden;
+        text-align: right;
+        float: right; }
+        body .header nav ul li {
+          display: inline-block;
+          margin-left: 2rem;
+          margin-top: 1rem;
+          line-height: 1.5; }
+          body .header nav ul li a:link, body .header nav ul li a:visited {
+            color: inherit;
+            text-decoration: none; }
+  body .active {
+    font-weight: 400;
+    color: #f7bb03;
+    background: #999999;
+    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.8); }
+  body main .head-dashboard {
+    position: relative;
+    height: 95vh;
+    padding-top: 50px;
+    background-image: linear-gradient(to right bottom, #f7f7f7ad, #f7f7f7ad), url(../image/indexDash.jpg);
+    background-size: cover;
+    background-position: top; }
 
 .head-dashboard .heading-box {
   position: absolute;
@@ -50,7 +206,7 @@ body {
     text-transform: uppercase; }
     .head-dashboard .heading-box .heading-primary .heading-primary-main {
       display: block;
-      font-size: 3.6rem;
+      font-size: 3.0rem;
       font-weight: 600;
       letter-spacing: 5px;
       color: #39426c;
@@ -59,7 +215,7 @@ body {
       display: block;
       font-size: 2.5rem;
       font-weight: 500;
-      letter-spacing: 17px;
+      letter-spacing: 13px;
       color: #dd3969;
       animation: moveInRight 1.5s ease-in-out; }
 
@@ -89,6 +245,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-right-text {
+  text-align: right; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
@@ -164,8 +323,9 @@ body {
     font-weight: 300;
     text-align: right;
     position: relative;
+    padding: 0.25rem;
     top: -1rem;
-    right: -10rem;
+    right: -7rem;
     background-color: rgba(57, 66, 108, 0.95);
     display: inline-block; }
   .card-1:hover {
@@ -188,7 +348,7 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 2.0rem;
   text-align: center;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -255,6 +415,45 @@ body {
     outline: none;
     position: relative;
     top: 0.5rem; }
+
+.ludwig {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 0.8rem solid #4d4d4d;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Roboto', serif;
+  font-weight: 100; }
+  .ludwig:before, .ludwig:after {
+    content: '\201C';
+    font-family: 'Sanchez';
+    color: #1a1a1a; }
+  .ludwig:after {
+    content: '\201D'; }
+  .ludwig__author {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #404040;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem; }
+    .ludwig__author:before {
+      content: '\2015'; }
+
+.ludwig-right {
+  position: relative;
+  padding-left: 1rem;
+  border-right: 0.8rem solid #4d4d4d;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  font-weight: 100; }
+  .ludwig-right:before, .ludwig-right:after {
+    content: '\201C';
+    font-family: 'Sanchez';
+    color: #4d4d4d; }
+  .ludwig-right:after {
+    content: '\201D'; }
 
 .row-1 {
   max-width: 114rem;

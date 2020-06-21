@@ -11,42 +11,47 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css/icon-fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/style.js"></script>
 
     <title>Anjali Arts Academy | Design Your Dreams</title>
 
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand " href="#">
-                <img src="image\logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav navbar-right">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#category">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    
     <main>
+
+        <header class="header">
+
+            <div class="row">
+                <a class="logo" href="#">
+                    <img src="image/foo-logo.png" alt="Logo" class="logo-box">
+                </a>
+        
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#category">Categories</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+        
+            </div> <!-- / row -->
+        
+        </header>
+        
         <div class="head-dashboard">
             <div class="heading-box">
                 <h1 class="heading-primary">
@@ -64,22 +69,27 @@
             </div>
 
             <div class="row-1">
-                <div class="col-1-of-2">
-                   <h3 class="heading-tertiary u-margin-bottom-small">Dreams have no fear to jump out of the box</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sequi? Officia ullam aliquid error eligendi perspiciatis consequuntur nisi possimus. Obcaecati esse illum voluptatem recusandae fuga tempora. Repellendus voluptate inventore eum?
-                    </p>
 
-                    <h3 class="heading-tertiary u-margin-bottom-small">Art should be something that liberates your soul </h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sequi? Officia ullam aliquid error eligendi perspiciatis consequuntur nisi possimus.
-                    </p>
+                <div class="col-1-of-2">
+                    <blockquote class="u-margin-bottom-medium ludwig" data-animation="slideInRight">
+                        Everybody is talented because everybody who is human has something to express.
+                        <div class="ludwig__author">Brenda Ueland</div>
+                    </blockquote>
+                    <blockquote class="u-margin-bottom-medium ludwig-right" data-animation="slideInRight" data-animation-delay="300ms">
+                        Everyone has talent. What's rare is the courage to follow it to the dark places where it leads.
+                        <div class="ludwig__author">Erica Jong</div>
+                    </blockquote>
+                    <blockquote class="ludwig" data-animation="slideInRight" data-animation-delay="600ms">
+                        The person born with a talent they are meant to use will find their greatest happiness in using it. 
+                        <div class="ludwig__author">Johann Wolfgang von Goethe</div>
+                    </blockquote>
                 </div>
+
                 <div class="col-1-of-2">
                    <div class="composition">
-                       <img src="image/sect-1.jpg" alt="Drawing" class="composition__photo composition__photo--p1">
-                       <img src="image/sect-2.jpg" alt="Origami" class="composition__photo composition__photo--p2">
-                       <img src="image/sect-3.jpg" alt="Yoga" class="composition__photo composition__photo--p3">
+                       <img src="image/sect-1.jpg" alt="Drawing" class="composition__photo composition__photo--p1" >
+                       <img src="image/sect-2.jpg" alt="Origami" class="composition__photo composition__photo--p2" >
+                       <img src="image/sect-3.jpg" alt="Yoga" class="composition__photo composition__photo--p3" >
                    </div>
                 </div>
             </div>
@@ -88,7 +98,7 @@
         <section class="section-features">
             <div class="row-1">
                 <div class="col-1-of-3">
-                    <div class="feature-box">
+                    <div class="feature-box" data-animation="fadeIn">
                         <i class="feature-box__icon icon-basic-lightbulb clr-blue"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Explore the Ideas</h3>
                         <p class="feature-box__text">
@@ -97,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-1-of-3">
-                    <div class="feature-box">
+                    <div class="feature-box" data-animation="fadeIn" data-animation-delay="600ms">
                         <i class="feature-box__icon icon-basic-target clr-red"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Focus It</h3>
                         <p class="feature-box__text">
@@ -106,7 +116,7 @@
                     </div>
                 </div>
                 <div class="col-1-of-3">
-                    <div class="feature-box">
+                    <div class="feature-box" data-animation="fadeIn" data-animation-delay="900ms">
                         <i class="feature-box__icon icon-basic-paperplane clr-brown"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Fly with It</h3>
                         <p class="feature-box__text">
@@ -124,7 +134,7 @@
                 </h2>
             </div>
             <div class="row-1">
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY">
                     <div class="card-1">
                        <div class="card-1__picture card-1__picture--1">
 
@@ -141,7 +151,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY" data-animation-delay="300ms">
                     <div class="card-1">
                         <div class="card-1__picture card-1__picture--2">
  
@@ -159,7 +169,7 @@
                      </div>
                    
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY" data-animation-delay="600ms">
                     <div class="card-1">
                         <div class="card-1__picture card-1__picture--3">
  
@@ -179,7 +189,7 @@
                 </div>
             </div>
             <div class="row-1">
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY">
                     <div class="card-1">
                        <div class="card-1__picture card-1__picture--4">
 
@@ -196,7 +206,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY" data-animation-delay="300ms">
                     <div class="card-1">
                         <div class="card-1__picture card-1__picture--5">
  
@@ -214,7 +224,7 @@
                      </div>
                    
                 </div>
-                <div class="col-1-of-3">
+                <div class="col-1-of-3" data-animation="flipInY" data-animation-delay="600ms">
                     <div class="card-1">
                         <div class="card-1__picture card-1__picture--6">
  
@@ -235,7 +245,7 @@
             </div>
         </section>
 
-        <section class="section-contact-us">
+        <section class="section-contact-us" id="contact">
             <div class="row-1">
                 <div class="contact">
                     <div class="contact__form">
@@ -280,18 +290,21 @@
     <footer class="footer">
         <div class="row-1">
             <div class="footer__logo-box">
-                <div class="col-1-of-2">
-                    <img src="image/foo-logo.png" alt="Full Logo" class="footer__logo">
+                <div class="col-1-of-3">
+                    <div class="social-media">
+                        <p>Hello</p>
+                    </div>
                 </div>
-                <div class="col-1-of-2">
+                <div class="col-1-of-3"><img src="image/foo-logo.png" alt="Full Logo" class="footer__logo"></div>
+                <div class="col-1-of-3">
                     <p class="footer__para">
-                        Mail us at <span class="footer__para__span">anjaliartsacademy@gmail.com</span> 
+                        For Queries..<br>
+                        Mail us at <span class="footer__para__span">sudha@anjaliartsacademy.com</span> 
                     </p>
                 </div>
             </div>
         </div>
-        
-        
+                
 
         <div class="row-1">
             <div class="col-1-of-2">
