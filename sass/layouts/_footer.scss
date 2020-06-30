@@ -14,8 +14,8 @@
         display: block;
 
         &__span{
-            font-size: 2rem;
-            display: block;
+            font-size: 1.5rem;
+            display: inline-block;
             font-weight: 700;
         }
     }
@@ -39,7 +39,7 @@
         display: inline-block;
 
         &:not(:last-child){
-            margin-right: 2rem;
+            margin-right: 1.5rem;
         }
     }
 
@@ -56,6 +56,11 @@
             color: rgba($color-logo-red, 0.95);
         }
 
+    }
+
+    &__social{
+        display: block;
+        width: min-content;
     }
 
     &__copyright{
