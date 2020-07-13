@@ -535,8 +535,8 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    border-top: 2px solid grey;
     padding-top: 1rem;
+    padding-left: 8rem;
     display: inline-block; }
   .footer__list {
     list-style: none; }
@@ -554,7 +554,6 @@ body {
     display: block;
     width: min-content; }
   .footer__copyright {
-    border-top: 2px solid grey;
     padding-top: 1rem;
     display: inline-block; }
   .footer__link-1:link, .footer__link-1:visited {

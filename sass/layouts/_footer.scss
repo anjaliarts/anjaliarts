@@ -26,8 +26,8 @@
     }
 
     &__navigation{
-        border-top: 2px solid $color-grey;
         padding-top: 1rem;
+        padding-left: 8rem;
         display: inline-block;
     }
 
@@ -64,7 +64,6 @@
     }
 
     &__copyright{
-        border-top: 2px solid $color-grey;
         padding-top: 1rem;
         display: inline-block;
     }
