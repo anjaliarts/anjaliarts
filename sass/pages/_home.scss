@@ -19,11 +19,19 @@
 .section-category{
     background-color: $color-light-grey-1;
     padding: 5rem 10rem 10rem 10rem;
+
+    @include respond(tab-port){
+        padding: 5rem 10rem 5rem 10rem;
+    }
 }
 
 .section-contact-us{
     padding: 7.5rem;
     background-color: rgba($color-logo-blue, 0.8);
+
+    @include respond(tab-port){
+        padding: 7.5rem 5rem 7.5rem 5rem;
+    }
 }
 
 .contact{

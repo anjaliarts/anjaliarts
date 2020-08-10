@@ -7,6 +7,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
     color: $color-white;
 
+    @include respond(tab-port){
+        margin-bottom: $gutter-vertical-card;
+    }
+
     &__picture{
         background-size: cover;
         height: 12rem;

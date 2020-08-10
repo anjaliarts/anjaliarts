@@ -3,6 +3,10 @@
     padding: 10rem 10rem;
     font-size: 1.1rem;
 
+    @include respond(phone){
+        padding: 8rem 7rem 6rem 7rem;
+    }
+
     &__logo-box{
         text-align: center;
         padding-bottom: 4rem;
@@ -12,6 +16,11 @@
         padding-top: 4rem;
         font-size: 1.5rem;
         display: block;
+
+        @include respond(tab-port){
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
 
         &__span{
             font-size: 1.5rem;
@@ -29,6 +38,16 @@
         padding-top: 1rem;
         padding-left: 8rem;
         display: inline-block;
+
+        @include respond(tab-port){
+            padding-left: 8.5rem;
+            font-size: 2rem;
+        }
+
+        @include respond(phone){
+            padding-left: 2.5rem;
+            font-size: 1.5rem;
+        }
     }
 
     &__list{
@@ -65,7 +84,12 @@
 
     &__copyright{
         padding-top: 1rem;
+        font-size: 1rem;
         display: inline-block;
+
+        @include respond(tab-port){
+            font-size: 1.5rem;
+        }
     }
 
     &__link-1{

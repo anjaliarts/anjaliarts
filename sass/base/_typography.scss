@@ -6,6 +6,14 @@
     transition: all .1s;
     color: $color-logo-blue;
 
+    @include respond(tab-port){
+        font-size: 2.25rem;
+    }
+
+    @include respond(phone){
+        font-size: 2rem;
+    }
+    
     &:hover{
         font-weight: bold;
         color: $color-logo-orange;

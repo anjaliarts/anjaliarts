@@ -136,7 +136,13 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 1rem; }
+  font-size: 100%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 125%; } }
 
 p {
   margin: 0; }
@@ -164,11 +170,17 @@ body {
       line-height: 1; }
     body .header .logo-box {
       position: relative;
-      height: 5rem;
-      left: 1rem;
-      top: -1rem; }
+      height: 5.5rem;
+      left: 2rem;
+      top: 0rem; }
     body .header nav {
       width: 60%; }
+      @media (max-width: 56.25em) {
+        body .header nav {
+          font-size: 2rem; } }
+      @media (max-width: 37.5em) {
+        body .header nav {
+          width: 80%; } }
       body .header nav ul {
         list-style: none;
         overflow: hidden;
@@ -179,6 +191,9 @@ body {
           margin-left: 2rem;
           margin-top: 1rem;
           line-height: 1.5; }
+          @media (max-width: 37.5em) {
+            body .header nav ul li {
+              font-size: 1.5rem; } }
           body .header nav ul li a:link, body .header nav ul li a:visited {
             color: inherit;
             text-decoration: none; }
@@ -188,7 +203,12 @@ body {
     background: #999999;
     -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.8); }
+    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.8);
+    transition: 0.2s all; }
+    body .active .logo-box {
+      height: 5rem;
+      top: -1rem;
+      left: 2rem; }
   body main .head-dashboard {
     position: relative;
     height: 95vh;
@@ -211,6 +231,10 @@ body {
       letter-spacing: 5px;
       color: #39426c;
       animation: moveInLeft 1.5s ease-in-out; }
+      @media (max-width: 37.5em) {
+        .head-dashboard .heading-box .heading-primary .heading-primary-main {
+          font-size: 1.8rem;
+          letter-spacing: 0; } }
     .head-dashboard .heading-box .heading-primary .heading-primary-sub {
       display: block;
       font-size: 2.5rem;
@@ -218,6 +242,14 @@ body {
       letter-spacing: 13px;
       color: #dd3969;
       animation: moveInRight 1.5s ease-in-out; }
+      @media (max-width: 56.25em) {
+        .head-dashboard .heading-box .heading-primary .heading-primary-sub {
+          font-size: 1.8rem;
+          letter-spacing: 14px; } }
+      @media (max-width: 37.5em) {
+        .head-dashboard .heading-box .heading-primary .heading-primary-sub {
+          font-size: 1.8rem;
+          letter-spacing: 0.75px; } }
 
 #scroll {
   position: fixed;
@@ -257,6 +289,12 @@ body {
   display: inline-block;
   transition: all .1s;
   color: #39426c; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.25rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     font-weight: bold;
     color: #f7bb03;
@@ -281,13 +319,25 @@ body {
   text-align: right; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1.5rem !important; } }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 4rem !important; } }
+
+.margin-max-width {
+  max-width: 30rem; }
 
 .clr-red {
   color: red; }
@@ -300,6 +350,9 @@ body {
 
 .composition {
   position: relative; }
+  @media (max-width: 56.25em) {
+    .composition {
+      top: 3rem; } }
   .composition__photo {
     width: 55%;
     text-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -308,15 +361,35 @@ body {
     z-index: 10;
     transition: all .2s;
     outline-offset: 1rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.3333333%;
+        text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 0;
       top: 0rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.1); } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: 0;
+          transform: scale(1.3);
+          z-index: 100; } }
     .composition__photo--p3 {
       left: 10%;
       top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          left: 0;
+          top: 0;
+          transform: scale(1.2); } }
     .composition__photo:hover {
       outline: 1rem solid green;
       transform: scale(1.05) translate(-0.5rem);
@@ -331,6 +404,9 @@ body {
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   color: #ffffff; }
+  @media (max-width: 56.25em) {
+    .card-1 {
+      margin-bottom: 5rem; } }
   .card-1__picture {
     background-size: cover;
     height: 12rem;
@@ -384,6 +460,9 @@ body {
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      margin-bottom: 1.5rem; } }
   .feature-box__icon {
     font-size: 5rem;
     margin-bottom: 0.5rem; }
@@ -495,6 +574,15 @@ body {
   margin: 0 auto; }
   .row-1:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row-1:not(:last-child) {
+        margin-bottom: 0; } }
+  @media (max-width: 56.25em) {
+    .row-1 {
+      max-width: 35rem; } }
+  @media (max-width: 37.5em) {
+    .row-1 {
+      max-width: 30rem; } }
   .row-1::after {
     content: "";
     display: table;
@@ -503,6 +591,12 @@ body {
     float: left; }
     .row-1 [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row-1 [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media (max-width: 56.25em) {
+      .row-1 [class^="col-"] {
+        width: 100% !important; } }
   .row-1 .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row-1 .col-1-of-3 {
@@ -520,6 +614,9 @@ body {
   background-color: #eee;
   padding: 10rem 10rem;
   font-size: 1.1rem; }
+  @media (max-width: 37.5em) {
+    .footer {
+      padding: 8rem 7rem 6rem 7rem; } }
   .footer__logo-box {
     text-align: center;
     padding-bottom: 4rem; }
@@ -527,6 +624,10 @@ body {
     padding-top: 4rem;
     font-size: 1.5rem;
     display: block; }
+    @media (max-width: 56.25em) {
+      .footer__para {
+        padding-top: 2rem;
+        margin-bottom: 2rem; } }
     .footer__para__span {
       font-size: 1.5rem;
       display: inline-block;
@@ -538,6 +639,14 @@ body {
     padding-top: 1rem;
     padding-left: 8rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        padding-left: 8.5rem;
+        font-size: 2rem; } }
+    @media (max-width: 37.5em) {
+      .footer__navigation {
+        padding-left: 2.5rem;
+        font-size: 1.5rem; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -555,7 +664,11 @@ body {
     width: min-content; }
   .footer__copyright {
     padding-top: 1rem;
+    font-size: 1rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        font-size: 1.5rem; } }
   .footer__link-1:link, .footer__link-1:visited {
     color: #000000;
     text-decoration: none;
@@ -577,10 +690,16 @@ body {
 .section-category {
   background-color: #f7f7f7;
   padding: 5rem 10rem 10rem 10rem; }
+  @media (max-width: 56.25em) {
+    .section-category {
+      padding: 5rem 10rem 5rem 10rem; } }
 
 .section-contact-us {
   padding: 7.5rem;
   background-color: rgba(57, 66, 108, 0.8); }
+  @media (max-width: 56.25em) {
+    .section-contact-us {
+      padding: 7.5rem 5rem 7.5rem 5rem; } }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../image/indexDash.jpg);

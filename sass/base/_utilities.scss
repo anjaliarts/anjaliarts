@@ -1,10 +1,47 @@
-.u-center-text{ text-align: center;}
-.u-right-text{text-align: right;}
+.u-center-text{ 
+    text-align: center;
+}
 
-.u-margin-bottom-small{margin-bottom: 2rem;}
-.u-margin-bottom-medium{margin-bottom: 4rem;}
-.u-margin-bottom-big{margin-bottom: 6rem;}
+.u-right-text{
+    text-align: right;
+}
 
-.clr-red{ color: red;}
-.clr-blue{ color: blue;}
-.clr-orange{ color: orange;}
+.u-margin-bottom-small{
+    margin-bottom: 2rem !important;
+
+    @include respond(tab-port){
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+.u-margin-bottom-medium{
+    margin-bottom: 4rem !important;
+
+    @include respond(tab-port){
+        margin-bottom: 3rem !important;
+    }
+}
+    
+.u-margin-bottom-big{
+    margin-bottom: 6rem !important;
+
+    @include respond(tab-port){
+        margin-bottom: 4rem !important;
+    }
+}
+
+.margin-max-width{
+    max-width: 30rem;
+}
+
+.clr-red{ 
+    color: red;
+}
+
+.clr-blue{ 
+    color: blue;
+}
+
+.clr-orange{ 
+    color: orange;
+}
