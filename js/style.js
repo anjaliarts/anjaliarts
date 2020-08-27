@@ -1,13 +1,15 @@
+// for navbar transparent to solid color
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-        console.log('Printed the log')
+        $("#navbar").addClass("active");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
-       $(".header").removeClass("active");
+       $("#navbar").removeClass("active");
     }
 });
 
+
+// for animation for the each elements in component
 var Animation = function({ offset } = { offset: 10 }) {
   var _elements;
   
@@ -79,6 +81,8 @@ var Animation = function({ offset } = { offset: 10 }) {
   };
 };
   
+
+// for to top button
 // Initialize
 var options = {
   offset: 20 //percentage of window
@@ -90,6 +94,7 @@ $(document).ready(function(){
   $(window).scroll(function(){ 
       if ($(this).scrollTop() > 100) { 
           $('#scroll').fadeIn(); 
+          console.log('scrolling');
       } else { 
           $('#scroll').fadeOut(); 
       } 
@@ -100,3 +105,35 @@ $(document).ready(function(){
   }); 
 });
 
+// for toggling the navbar collabsible bar
+const navbar = document.getElementById("navbar");
+const navbarToggle = navbar.querySelector(".navbar-toggle");
+
+function openMobileNavbar() {
+  navbar.classList.add("opened");
+  console.log("opened");
+  navbarToggle.setAttribute("aria-label", "Close navigation menu.");
+}
+
+function closeMobileNavbar() {
+  navbar.classList.remove("opened");
+  console.log("Closed");
+  navbarToggle.setAttribute("aria-label", "Open navigation menu.");
+}
+
+navbarToggle.addEventListener("click", () => {
+  if (navbar.classList.contains("opened")) {
+    closeMobileNavbar();
+  } else {
+    openMobileNavbar();
+  }
+});
+
+const navbarMenu = navbar.querySelector(".navbar-menu");
+const navbarLinksContainer = navbar.querySelector(".navbar-links");
+
+navbarLinksContainer.addEventListener("click", (clickEvent) => {
+  clickEvent.stopPropagation();
+});
+
+navbarMenu.addEventListener("click", closeMobileNavbar);

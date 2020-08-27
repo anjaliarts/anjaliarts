@@ -3,6 +3,10 @@
     padding: 15rem 10rem;
     margin-top: -20vh;
 
+    @include respond(phone){
+        margin-top: -10vh;
+    }
+
 }
 
 .section-features{
@@ -30,7 +34,7 @@
     background-color: rgba($color-logo-blue, 0.8);
 
     @include respond(tab-port){
-        padding: 7.5rem 5rem 7.5rem 5rem;
+        padding: 7.5rem 5rem;
     }
 }
 
@@ -49,5 +53,9 @@
     &__form{
         width: 50%;
         padding: 2rem 3rem;
+
+        @include respond(mobile){
+            padding: 2rem 2rem;
+        }
     }
 }
