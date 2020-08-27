@@ -543,7 +543,8 @@ body {
         float: left;
         position: relative;
         width: 33.3333333%;
-        text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+        text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        outline-offset: 0.5rem; } }
     .composition__photo--p1 {
       left: 0;
       top: 0rem; }
@@ -569,9 +570,12 @@ body {
           transform: scale(1.2); } }
     .composition__photo:hover {
       outline: 1rem solid green;
-      transform: scale(1.05) translate(-0.5rem);
+      transform: scale(1.5) translate(-0.5rem);
       text-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
-      z-index: 30; }
+      z-index: 300; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          outline: 0.5rem solid green; } }
 
 .card-1 {
   background-color: #ffffff;
