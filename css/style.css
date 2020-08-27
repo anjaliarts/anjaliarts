@@ -612,6 +612,9 @@ body {
     right: -7rem;
     background-color: rgba(57, 66, 108, 0.95);
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .card-1__heading {
+        font-size: 1.8rem; } }
   .card-1:hover {
     transform: scale(1.06); }
   .card-1__details {

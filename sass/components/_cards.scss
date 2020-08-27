@@ -66,6 +66,10 @@
        right: -7rem;
        background-color: rgba($color-logo-blue, 0.95);
        display: inline-block;
+
+       @include respond(tab-port){
+           font-size: 1.8rem;
+       }
     }
 
     &:hover{
