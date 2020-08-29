@@ -4,7 +4,7 @@
     font-size: 1.1rem;
 
     @include respond(phone){
-        padding: 8rem 7rem 6rem 7rem;
+        padding: 8rem 5rem 6rem 5rem;
     }
 
     &__logo-box{
@@ -40,13 +40,8 @@
         display: inline-block;
 
         @include respond(tab-port){
-            padding-left: 8.5rem;
-            font-size: 2rem;
-        }
-
-        @include respond(phone){
-            padding-left: 2.5rem;
-            font-size: 1.5rem;
+            padding-left: 0rem;
+            font-size: 1.75rem;
         }
     }
 

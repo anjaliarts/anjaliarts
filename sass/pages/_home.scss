@@ -54,7 +54,7 @@
         width: 50%;
         padding: 2rem 3rem;
 
-        @include respond(mobile){
+        @include respond(phone){
             padding: 2rem 2rem;
         }
     }
