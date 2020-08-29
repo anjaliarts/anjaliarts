@@ -22,10 +22,14 @@ $color-light-grey-1: #f7f7f7;
 $color-light-grey-2: #eee;
 $color-contrast: #fff;
 
+$navbar-text-color: hsl(0, 0%, 85%);
+$navbar-text-color-focus: white;
+$navbar-bg-contrast: hsl(0, 0%, 25%);
 // FONT
 $default-font-size: 1.6rem;
 $basic-font-size: 1.7rem;
 
+$navbar-height: 75px;
 
 // GRID
 $grid-width: 114rem;
