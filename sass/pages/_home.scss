@@ -43,7 +43,7 @@
                                     rgba($color-white, 0.9) 0%,
                                     rgba($color-white, 0.9) 50%,
                                     transparent 50%),
-                                    url(../../image/indexDash.jpg);
+                                    url(../../image/contact.jpg);
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -59,3 +59,63 @@
         }
     }
 }
+
+
+#button {
+    display: inline-block;
+    background-color: $color-logo-orange;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    @include respond(tab-port){
+        width: 35px;
+        height: 35px;
+    }
+
+    @include respond(phone){
+        width: 20px;
+        height: 20px;
+    }
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+
+    @include respond(tab-port){
+        font-size: 1.25em;
+        line-height: 35px;
+    }
+
+    @include respond(phone){
+        font-size: 0.6em;
+        line-height: 20px;
+    }
+    
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color:$color-logo-blue;
+  }
+  #button:active {
+    background-color:$color-logo-green;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  

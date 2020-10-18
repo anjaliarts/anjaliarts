@@ -55,12 +55,16 @@
 
         &:hover{
             outline: 1rem solid $color-green;
-            transform: scale(1.5) translate(-0.5rem);
+            transform: scale(1.1) translate(-0.5rem);
             text-shadow: 0 2.5rem 4rem rgba($color-black, .6);
             z-index: 300;
 
             @include respond(tab-port){
                 outline: 0.5rem solid $color-green;
+            }
+
+            @include respond(phone){
+                transform: scale(1.4) translate(-0.5rem);
             }
         }
     }

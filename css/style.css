@@ -575,12 +575,15 @@ body {
           transform: scale(1.2); } }
     .composition__photo:hover {
       outline: 1rem solid green;
-      transform: scale(1.5) translate(-0.5rem);
+      transform: scale(1.1) translate(-0.5rem);
       text-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 300; }
       @media (max-width: 56.25em) {
         .composition__photo:hover {
           outline: 0.5rem solid green; } }
+      @media (max-width: 35em) {
+        .composition__photo:hover {
+          transform: scale(1.4) translate(-0.5rem); } }
 
 .card-1 {
   background-color: #ffffff;
@@ -901,7 +904,7 @@ body {
       padding: 7.5rem 5rem; } }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../image/indexDash.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../image/contact.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -912,3 +915,54 @@ body {
     @media (max-width: 35em) {
       .contact__form {
         padding: 2rem 2rem; } }
+
+#button {
+  display: inline-block;
+  background-color: #f7bb03;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+  @media (max-width: 56.25em) {
+    #button {
+      width: 35px;
+      height: 35px; } }
+  @media (max-width: 35em) {
+    #button {
+      width: 20px;
+      height: 20px; } }
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; }
+  @media (max-width: 56.25em) {
+    #button::after {
+      font-size: 1.25em;
+      line-height: 35px; } }
+  @media (max-width: 35em) {
+    #button::after {
+      font-size: 0.6em;
+      line-height: 20px; } }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #39426c; }
+
+#button:active {
+  background-color: #a4d01b; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
