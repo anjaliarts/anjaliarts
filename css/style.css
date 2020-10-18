@@ -663,7 +663,7 @@ body {
   .feature-box:hover {
     transform: translateY(-0.5rem); }
   .feature-box__text {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
 
 .form__group {
   height: 5rem; }
@@ -874,7 +874,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 15rem 10rem;
+  padding: 13rem 10rem;
   margin-top: -20vh; }
   @media (max-width: 35em) {
     .section-about {
