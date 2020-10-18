@@ -286,9 +286,8 @@ body {
   margin-right: auto; }
 
 #navbar {
-  --navbar-height: 75px;
   position: fixed;
-  height: var(--navbar-height);
+  height: 75px;
   background-color: transparent;
   left: 0;
   right: 0;
@@ -306,7 +305,7 @@ body {
 
 .home-link,
 .navbar-link {
-  color: var(--navbar-text-color);
+  color: #d9d9d9;
   text-decoration: none;
   display: flex;
   font-weight: 600;
@@ -321,7 +320,7 @@ body {
 
 .home-link:focus,
 .home-link:hover {
-  color: var(--navbar-text-color-focus); }
+  color: white; }
 
 .navbar-link {
   justify-content: center;
@@ -331,8 +330,8 @@ body {
 
 .navbar-link:focus,
 .navbar-link:hover {
-  color: var(--navbar-text-color-focus);
-  background-color: var(--navbar-bg-contrast); }
+  color: white;
+  background-color: #404040; }
 
 .navbar-logo {
   position: relative;
@@ -398,7 +397,7 @@ body {
 
 .navbar-menu {
   position: fixed;
-  top: var(--navbar-height);
+  top: 75px;
   bottom: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   opacity: 0;

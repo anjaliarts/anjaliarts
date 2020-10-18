@@ -138,6 +138,11 @@ body{
 
                 animation: moveInLeft 1.5s ease-in-out;
 
+                @include respond(tab-land){
+                    font-size: 1.8rem;
+                    letter-spacing: 6px;
+                }
+
                 @include respond(tab-port){
                     font-size: 1.5rem;
                     letter-spacing: 6px;
@@ -157,6 +162,11 @@ body{
                 color: $color-logo-red;
 
                 animation: moveInRight 1.5s ease-in-out;
+
+                @include respond(tab-land){
+                    font-size: 1.8rem;
+                    letter-spacing: 9.5px;
+                }
 
                 @include respond(tab-port){
                     font-size: 1.5rem;
