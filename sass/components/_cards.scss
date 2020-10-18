@@ -67,6 +67,11 @@
        background-color: rgba($color-logo-blue, 0.95);
        display: inline-block;
 
+       @include respond(lap-small){
+        font-size: 1.5rem;
+        right: -8rem;
+    }
+
        @include respond(tab-port){
            font-size: 1.8rem;
            right: -8rem;

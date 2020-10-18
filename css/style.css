@@ -138,6 +138,9 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 75%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 60%; } }
@@ -223,6 +226,10 @@ body {
       letter-spacing: 5px;
       color: #39426c;
       animation: moveInLeft 1.5s ease-in-out; }
+      @media (max-width: 75em) {
+        .head-dashboard .heading-box .heading-primary .heading-primary-main {
+          font-size: 2rem;
+          letter-spacing: 9px; } }
       @media (max-width: 56.25em) {
         .head-dashboard .heading-box .heading-primary .heading-primary-main {
           font-size: 1.5rem;
@@ -238,6 +245,10 @@ body {
       letter-spacing: 13px;
       color: #dd3969;
       animation: moveInRight 1.5s ease-in-out; }
+      @media (max-width: 75em) {
+        .head-dashboard .heading-box .heading-primary .heading-primary-sub {
+          font-size: 1.8rem;
+          letter-spacing: 12px; } }
       @media (max-width: 56.25em) {
         .head-dashboard .heading-box .heading-primary .heading-primary-sub {
           font-size: 1.5rem;
@@ -610,6 +621,10 @@ body {
     right: -7rem;
     background-color: rgba(57, 66, 108, 0.95);
     display: inline-block; }
+    @media (max-width: 75em) {
+      .card-1__heading {
+        font-size: 1.5rem;
+        right: -8rem; } }
     @media (max-width: 56.25em) {
       .card-1__heading {
         font-size: 1.8rem;
@@ -722,6 +737,9 @@ body {
     color: #1a1a1a; }
   .ludwig:after {
     content: '\201D'; }
+  @media (max-width: 75em) {
+    .ludwig {
+      font-size: 1.5rem; } }
   .ludwig__author {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
@@ -746,6 +764,9 @@ body {
     color: #4d4d4d; }
   .ludwig-right:after {
     content: '\201D'; }
+  @media (max-width: 75em) {
+    .ludwig-right {
+      font-size: 1.5rem; } }
 
 .social-media {
   background-color: red;

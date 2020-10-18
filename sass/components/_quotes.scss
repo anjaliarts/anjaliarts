@@ -15,6 +15,10 @@
       content: '\201D';
    }
 
+   @include respond(lap-small){
+      font-size: 1.5rem;
+   }
+
    &__author {
       font-family: 'Noto Sans', sans-serif;
       font-size: 1rem;
@@ -45,4 +49,8 @@
     &:after {
        content: '\201D';
     }
+
+    @include respond(lap-small){
+      font-size: 1.5rem;
+   }
 }
